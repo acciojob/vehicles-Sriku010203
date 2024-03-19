@@ -1,4 +1,4 @@
-public class Boat{
+public class Boat implements WaterVehicle{
   String name;
   int capacity;
   
