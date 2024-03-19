@@ -7,15 +7,17 @@ public class Vehicle {
     private int currentDirection;
 
     public Vehicle(String name) {
-
+        this.name=name;
     }
 
     public void steer(int direction){
-        //direction is in degrees, add it to the current direction
+        int currentDirection=direction;
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }
 
     public void move(int speed, int direction){
+        int currentSpeed=speed;
+        int currentDirection=direction;
         //set the values of currentSpeed and currentDirection
         System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
     }
