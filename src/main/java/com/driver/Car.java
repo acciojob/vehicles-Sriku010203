@@ -16,10 +16,12 @@ public class Car extends Vehicle {
         this.gears=gears;
         this.type=type;
         this.seats=seats;
+        this.isManual=false;
         
     }
 
     public void changeGear(int newGear){
+        int current_gear=newGear;
 
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
